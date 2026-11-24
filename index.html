@@ -174,10 +174,10 @@ section{padding:clamp(56px,8vw,96px) 0}
 /* ───── HOUSES ───── */
 .greek{background:linear-gradient(#3a271c,#21160f);color:#f8f1e7}
 .greek .kicker{color:#f3c98b}.greek .h2{color:#fff5ec}.greek .lead{color:#cdb79b}
-.pennants{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
-.pen{display:flex;align-items:center;gap:8px;padding:8px 34px 8px 12px;clip-path:polygon(0 0,100% 50%,0 100%);font-family:Georgia,serif;font-weight:700;font-size:14px;letter-spacing:.12em;animation:wave 3s ease-in-out infinite;transform-origin:left center}
-.pen:nth-child(2n){animation-delay:.4s}.pen:nth-child(3n){animation-delay:.8s}
-@keyframes wave{50%{transform:skewY(-2deg) scaleX(.97)}}
+.pennants{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr));gap:10px 14px;margin-top:22px}
+.pen{position:relative;display:flex;align-items:center;gap:10px;height:46px;padding:0 56px 0 16px;border-left:4px solid #e9c98f;clip-path:polygon(0 0,100% 26%,100% 74%,0 100%);font-family:Georgia,serif;font-weight:700;font-size:15px;letter-spacing:.12em;white-space:nowrap;overflow:hidden;transition:transform .25s;transform-origin:left center}
+.pen small{font-size:11px;letter-spacing:.2em;opacity:.95}
+.pen:hover{transform:translateX(4px)}
 .house-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:clamp(14px,2vw,22px);margin-top:30px}
 .house{--c:#7f1d2d;--f:#f5d0a9;background:#2a1d16;border:1px solid rgba(243,201,139,.22);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:transform .35s,border-color .35s}
 .house:hover{transform:translateY(-4px);border-color:rgba(243,201,139,.55)}
