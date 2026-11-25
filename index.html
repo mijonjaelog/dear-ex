@@ -186,7 +186,8 @@ section{padding:clamp(56px,8vw,96px) 0}
 .house-ph .type{position:absolute;left:12px;top:12px;z-index:1;font-family:var(--en);font-size:11px;letter-spacing:.24em;font-weight:700;background:rgba(20,12,8,.7);color:#f3c98b;padding:3px 9px;border-radius:999px}
 .crest{position:absolute;right:14px;bottom:-34px;z-index:2;width:78px;filter:drop-shadow(0 6px 10px rgba(0,0,0,.45))}
 .house-bd{padding:16px 18px 18px;flex:1;display:flex;flex-direction:column}
-.house-name{font-family:Georgia,serif;font-weight:700;font-size:26px;letter-spacing:.06em;color:#fff5ec;padding-right:80px}
+.house-bd{container-type:inline-size}
+.house-name{font-family:Georgia,serif;font-weight:700;font-size:min(26px,calc((100cqi - 80px) / 8.4));letter-spacing:.06em;color:#fff5ec;white-space:nowrap;padding-right:80px}
 .house-greek{font-size:12.5px;color:#cdb79b;margin-top:2px}
 .motto{margin-top:10px;font-family:var(--serif);font-weight:700;font-size:16px;letter-spacing:.08em;color:var(--f)}
 .house p.d{margin-top:6px;font-size:13.5px;color:#e6dacb}
